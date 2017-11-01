@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:visibility="gone"
+             android:id="@+id/progress_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="-50dp"
+    android:background="#00000000">
+
+<ImageView
+    android:id="@+id/operation_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:src="@mipmap/video_volumn_bg"
+    />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:paddingBottom="25dp">
+        <ImageView
+            android:src="@mipmap/video_num_bg"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/operation_percent"
+            android:src="@mipmap/video_num_front"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:scaleType="fitXY"/>
+    </FrameLayout>
+
+</FrameLayout>
